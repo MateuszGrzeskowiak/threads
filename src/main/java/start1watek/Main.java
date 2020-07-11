@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // stworzenie zadania dla wątku bocznego/drugiego
-        ActivityNotifyingRunnable activityNotifyingRunnable = new ActivityNotifyingRunnable(50000000);
+        ActivityNotifyingRunnable activityNotifyingRunnable = new ActivityNotifyingRunnable(500000);
 
         // Stworzenie wątku i przekazanie wcześniej stworzonego zadania
         Thread watek = new Thread(activityNotifyingRunnable);
